@@ -4,11 +4,12 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 browser = webdriver.Chrome()
 
+wait = WebDriverWait(browser, 10)
+
 browser.get('https://www.baidu.com')
 inpurt = browser.find_element_by_id('kw')
 inpurt.send_keys('Python')
 inpurt.send_keys(Keys.ENTER)
-wait = WebDriverWait(browser, 10)
 
 print(browser.current_url)
 print(browser.get_cookies())
