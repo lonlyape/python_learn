@@ -33,12 +33,12 @@ wait = WebDriverWait(browser, 10)
 j_login_box = browser.find_element_by_id('J_Quick2Static')
 ActionChains(browser).click(j_login_box).perform()
 
-# acount = browser.find_element_by_id('TPL_username_1')
-# print('acount')
-# acount.send_keys('798456988@qq.com')
+acount = browser.find_element_by_id('TPL_username_1')
+print('acount')
+acount.send_keys('798456988@qq.com')
 
-# password = browser.find_element_by_id('TPL_password_1')
-# print('password')
-# password.send_keys('fdw2691893')
+password = browser.find_element_by_id('TPL_password_1')
+print('password')
+password.send_keys('123456789')
 
 # browser.refresh()
