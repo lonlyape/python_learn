@@ -35,9 +35,11 @@ class Ball(object):
         self.x += self.sx
         self.y += self.sy
         r = self.radius
-        if self.x-r <= 0 or self.x+r >= screen.get_width():
+        sw = screen.get_width()
+        sh = screen.get_height()
+        if self.x-r <= 0 or self.x+r >= sw:
             self.sx = -self.sx
-        if self.y-r <= 0 or self.y+r >= screen.get_height():
+        if self.y-r <= 0 or self.y+r >= sh:
             self.sy = -self.sy
 
     def draw(self, screen):
